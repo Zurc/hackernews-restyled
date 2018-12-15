@@ -1,0 +1,64 @@
+.se__cell {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  padding: 12px;
+  background: #f8f8f8;
+  position: relative;
+  cursor: pointer;
+}
+
+.se__cell:hover {
+  /* transform: scale(1.01); */
+  box-shadow: 0 0 0px 6px rgb(150, 150, 175);
+}
+
+.title {
+  text-transform: uppercase;
+  padding: 0.5rem 0;
+  font-weight: 600;
+}
+
+.content {
+  flex: 1;
+  color: #444444;
+  line-height: 1.1rem;
+}
+
+footer {
+  padding: 1rem 0;
+  position: relative;
+  border-top: 1px solid #dbdbdb;
+  color: #9b9b9b;
+}
+
+footer .score {
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  border-radius: 50%;
+  background: rgb(148, 233, 227);
+  padding: 1rem;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+}
+
+.se__cell.is-expanded  {
+  width: 470px;
+  max-height: 500px;
+}
+
+/* expand cards */
+.se__cell.is-expanded {
+  width: 496px;
+  height: 496px;
+  z-index: 1;
+}
+.se__cell:nth-child(4n).is-expanded {
+  margin-left: -256px;
+}
+.se__cell:nth-last-child(-n+4).is-expanded {
+  margin-top: -256px;
+}

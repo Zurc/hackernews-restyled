@@ -10,6 +10,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "dist": "surge --domain hackernews-restyled.surge.sh",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
