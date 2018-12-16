@@ -38,7 +38,8 @@ footer .score {
   right: 1rem;
   bottom: 0;
   border-radius: 50%;
-  background: rgb(148, 233, 227);
+  background: rgb(116, 185, 181);
+  color: white;
   padding: 1rem;
   text-align: center;
   width: 50px;
